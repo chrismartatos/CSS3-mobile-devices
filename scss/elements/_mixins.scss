@@ -1,0 +1,14 @@
+
+@mixin br($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($duration) {
+	-webkit-backface-visibility: hidden; 
+	-webkit-transition:all $duration ease; 
+	-moz-transition:all $duration ease; 
+	-o-transition:all $duration ease;
+	transition:all $duration ease;
+}

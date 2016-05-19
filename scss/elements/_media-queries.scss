@@ -1,0 +1,475 @@
+
+/*------------------------------------------------------------------------------------
+	Media Queries: for laptops etc.
+------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1039px) and (max-width: 1320px){
+	
+	/*	Device:  Mobile Device
+	---------------------------------------------------------*/
+	.mobile-device {
+		height: 470px;
+		width: 220px;
+		
+		@include br(24px);
+		
+		 .speaker {
+			 margin: 25px auto;
+			 height: 4px;
+		 }
+
+		 .screen {
+			 width: 200px;
+			 height: 350px;
+		 }
+		 
+		 .touch {
+			 width: 35px;
+			 height: 35px;
+			 border-width: 3px;
+		 }
+	}
+	
+	
+	
+	/*	Hover for devices
+	---------------------------------------------------------*/	
+	.screen {
+				
+		.hover-screen {
+			
+			.text {
+				
+				p {
+					font-size: 0.9em;
+					line-height: 1.5em;
+				}
+			}
+		}	
+	}
+	
+	
+	
+}
+
+	
+/*------------------------------------------------------------------------------------
+	MEDIA QUERIES 
+------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1039px) and  (max-width: 1140px) {
+	
+
+	/* Device: Desktop
+	------------------------------------------*/
+	.wrap-desktop {		
+		width: 740px;
+		
+		.desktop-screen {
+			height: 470px;
+			position: relative;
+			width: 740px;
+			
+			@include br(12px);
+			
+			.screen {
+				height: 420px;
+				width: 700px;
+				margin: 25px auto;
+			}	
+			
+			.controls {
+				bottom: 12px;
+			}
+		}
+		
+		.stand-top {
+			height: 70px;
+			width: 40px;
+		}
+	
+		.stand-bottom {
+			width: 160px;
+			height: 6px;
+		}	
+	}
+	
+	
+	/*	Device:  Tablet
+	---------------------------------------------------------*/	
+	.tablet-device {
+		width: 615px;
+		height: 392px;
+		
+		@include br(28px);
+		
+		.speaker {
+			width: 8px;
+			height: 8px;
+			left: 30px;	
+		}
+		
+		.screen {
+			height: 351px;
+			width: 480px;
+			margin-left: 60px;
+			margin-top: 20px;
+		}
+		
+		.touch {
+			 border-width: 3px; 
+			 height: 35px;
+			 width: 35px;
+			 margin-top: -19px;
+		}
+	}
+		
+	
+	/* Device:  Browser Tab
+	------------------------------------------*/
+	.browser-tab {
+		width: 75%;
+		margin: 0 auto;
+	}
+	
+	
+}/*Close @media*/
+
+
+/*------------------------------------------------------------------------------------
+	Media Queries:  Tablet 
+------------------------------------------------------------------------------------*/
+@media only screen  and (max-width: 1040px) {
+	
+
+	
+	/*	Device:  Desktop
+	---------------------------------------------------------*/
+	.wrap-desktop {
+		width: 500px;
+		
+		.desktop-screen {
+			height: 320px;
+			position: relative;
+			width: 500px;
+			
+			@include br(8px);
+			
+			.screen {
+				height: 285px;
+				width: 470px;
+				margin: 17px auto;
+			}
+			
+			.controls {
+				bottom: 8px;
+				right: 20px;
+				
+				.power {
+					height: 2px;
+					width: 10px;
+				}
+			}
+		}
+		
+		.stand-top {
+			height: 60px;
+			width: 32px;
+		}
+	
+		.stand-bottom {
+			width: 160px;
+			height: 6px;
+		}
+		
+	}//End .wrap-desktop
+	
+	
+	/*	Device:  Tablet
+	---------------------------------------------------------*/	
+	.tablet-device {
+		width: 615px;
+		height: 392px;
+		
+		@include br(28px);
+		
+		.speaker {
+			width: 8px;
+			height: 8px;
+			left: 30px;	
+		}
+		
+		.screen {
+			height: 351px;
+			width: 480px;
+			margin-left: 60px;
+			margin-top: 20px;
+		}
+		
+		.touch {
+			 border-width: 3px; 
+			 height: 35px;
+			 width: 35px;
+			 margin-top: -19px;
+		}
+	}
+	
+	
+	/*	Device:  Mobile 
+	---------------------------------------------------------*/	
+	.mobile-device {
+		height: 470px;
+		width: 220px;
+		@include br(24px);
+		
+		 .speaker {
+			 margin: 25px auto;
+			 height: 4px;
+		 }
+		 .screen {
+			 width: 200px;
+			 height: 350px;
+			
+			.info-hover {
+				opacity: 1;
+			}
+		 }
+		 
+		 .touch {
+			 width: 35px;
+			 height: 35px;
+			 border-width: 3px;
+		 }
+	}
+	
+
+	/*	Hover for devices
+	---------------------------------------------------------*/	
+	.screen {
+		
+		.hover-screen {
+			
+			.text {
+				
+				p {
+					font-size: 0.9em;
+					line-height: 1.5em;
+				}
+			}
+		}	
+	}
+	
+	
+	/*	Device:  Browser Tab
+	---------------------------------------------------------*/	
+	.browser-tab {
+		width: 72%;
+		margin: 0 auto;
+		
+		.tab {
+			height: 25px;
+			
+			.control {
+				height: 8px;
+			    margin: 8px 0 0 9px;
+			    width: 8px;
+			}
+		}
+	}
+
+	
+}/*Close @media*/
+
+
+/*------------------------------------------------------------------------------------
+	Media Queries:  All mobile devices
+------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+
+		/*	Mobile Hover icon
+	---------------------------------------------------------*/	
+	.screen	{
+		.hand {
+			opacity: 1;
+		}
+	}	
+		
+
+		/*	Device:  Desktop
+	---------------------------------------------------------*/
+	.wrap-desktop {
+		width: 440px;
+		
+		.desktop-screen {
+			height: 277px;
+			position: relative;
+			width: 100%;
+			
+			@include br(6px);
+			
+			.screen {
+				height: 256px;
+				width: 420px;
+				margin: 10px auto;
+			}
+			
+			.controls {
+				bottom: 5px;
+				right: 16px;
+				
+				.power {
+					height: 2px;
+					width: 8px;
+				}
+			}
+		}
+		
+		.stand-top {
+			height: 38px;
+			width: 28px;
+		}
+	
+		.stand-bottom {
+			width: 88px;
+			height: 3px;
+		}
+		
+	}//End
+	
+	
+	
+	/*	Device:  Tablet
+	---------------------------------------------------------*/	
+	.tablet-device {
+		width: 440px;
+		height: 283px;
+		
+		@include br(18px);
+		
+		.speaker {
+			width: 6px;
+			height: 6px;
+			left: 14px;	
+		}
+		
+		.screen {
+			height: 263px;
+			width: 360px;
+			margin-left: 33px;
+			margin-top: 10px;
+		}
+		
+		.touch {
+			 border-width: 2px; 
+			 height: 25px;
+			 width: 25px;
+			 margin-top: -13px;
+			 right: 10px;
+		}
+	}
+
+	
+	/*	Device: Browser Tab
+	---------------------------------------------------------*/	
+	.browser-tab {
+		width: 88%;
+		
+		.tab {
+			height: 20px;
+			
+			-webkit-border-radius: 6px 6px 0 0;
+			-moz-border-radius: 6px 6px 0 0;
+			border-radius: 6px 6px 0 0;
+			
+			.control {
+				height: 6px;
+			    margin: 6px 0 0 6px;
+			    width: 6px;
+			}
+		}
+	}
+	
+	
+
+}/*Close @media*/
+
+
+
+/*------------------------------------------------------------------------------------
+	Media Queries: Portrait only
+------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 479px){
+	
+
+	/*	Device: Desktop
+	---------------------------------------------------------*/
+	.wrap-desktop {
+		width: 300px;
+		
+		.desktop-screen {
+			height: 190px;
+			position: relative;
+			width: 300px;
+			
+			@include br(6px);
+			
+			.screen {
+				height: 169px;
+				width: 276px;
+				margin: 10px auto;
+			}	
+		}
+		
+		.stand-top {
+			height: 35px;
+			width: 25px;
+		}
+	
+		.stand-bottom {
+			width: 85px;
+			height: 3px;
+		}
+		
+		.controls {
+			bottom: 5px;
+			right: 16px;
+			
+			.power {
+				height: 2px;
+				width: 8px;
+			}
+		}
+		
+	}//End
+	
+	/*	Device: Tablet
+	---------------------------------------------------------*/	
+	.tablet-device {
+		width: 316px;
+		height: 205px;
+		
+		@include br(12px);
+		
+		.speaker {
+			width: 4px;
+			height: 4px;
+			left: 8px;	
+		}
+		
+		.screen {
+			height: 192px;
+			width: 260px;
+			margin-left: 22px;
+			margin-top: 7px;
+		}
+		
+		.touch {
+			 border-width: 2px; 
+			 height: 16px;
+			 width: 16px;
+			 margin-top: -8px;
+			 right: 7px;
+		}
+	}
+
+	
+	
+}/*Close @media*/
