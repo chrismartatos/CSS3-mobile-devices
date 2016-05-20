@@ -1,5 +1,16 @@
+/*
+	Content
+	*----------------------------*
+	1. Media Queries: Big screens
+	2. Media Queries: Laptops
+	3. Media Queries: Tablets
+	4. Media Queries: Mobile devices
+	5. Media Queries: Mobile portrait
+*/
+
+
 /*------------------------------------------------------------------------------------
-	Media Queries: Big screens
+	1. Media Queries: Big screens
 ------------------------------------------------------------------------------------*/ 
 @media only screen and (min-width: 1039px) and (max-width: 1320px) {
 
@@ -40,7 +51,7 @@
 
 
 /*------------------------------------------------------------------------------------
-	Media Queries: Laptops 
+	2. Media Queries: Laptops 
 ------------------------------------------------------------------------------------*/  
 @media only screen and (min-width: 1039px) and (max-width: 1140px) {
 	
@@ -124,7 +135,7 @@
 
 
 /*------------------------------------------------------------------------------------
-	Media Queries: Tablets 
+	3. Media Queries: Tablets 
 ------------------------------------------------------------------------------------*/  
 @media only screen and (max-width: 1040px) {
   
@@ -258,7 +269,7 @@
 
 
 /*--------------------------------------------------------------------
-		Media Queries: All Mobile devices 
+	4. Media Queries: All Mobile devices 
 --------------------------------------------------------------------*/
 @media only screen and (max-width: 767px)
 {
@@ -371,7 +382,7 @@
 
 
 /*------------------------------------------------------------------------------------
-	Media Queries: Mobile Portrait 
+	5. Media Queries: Mobile Portrait 
 ------------------------------------------------------------------------------------*/  
 @media only screen and (max-width: 479px) {
 	

@@ -1,5 +1,17 @@
+/*
+	Content
+	*----------------------------*
+	1. Shortcodes
+	2. Screen for all devices
+	3. Hover for all devices
+	4. Mobile Device
+	5. Tablet
+	6. Desktop 
+	7. Browser Tab
+*/
+
 /*--------------------------------------------------------------------
-		Shortcodes
+		1. Shortcodes
 --------------------------------------------------------------------*/
 .clear:before, 
 .clear:after { 
@@ -28,7 +40,7 @@
 
 
 /*--------------------------------------------------------------------
-		Screen for all devices
+		2. Screen for all devices
 --------------------------------------------------------------------*/
 .screen {
   background-color: #FFF;
@@ -42,8 +54,87 @@
 }
 
 
+
+/*---------------------------------------------------------------------------
+		3. Hover for devices - Global
+----------------------------------------------------------------------------*/
+
+.screen .info-hover {
+  position: absolute;
+  right: 10px;
+  top: 27px;
+  text-align: center;
+  font-size: 0.6em;
+  line-height: 0.8em;
+  
+  z-index: 1;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  
+  background-color: rgba(251, 251, 251, 0.9);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.screen .info-hover i {
+  font-family: "Inconsolata";
+  font-style: normal;
+  position: relative;
+  top: 8px;
+}
+
+.screen .hover-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  opacity: 0;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.screen .hover-screen .title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Inconsolata";
+  color: #fff;
+}
+
+.screen .hover-screen .text {
+  color: #fff;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  font-family: "Inconsolata";
+  width: 90%;
+  margin: 0 auto;
+}
+
+.screen:active .hover-screen,
+.screen:focus .hover-screen,
+.screen:hover .hover-screen {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
 /*--------------------------------------------------------------------
-		Mobile Device
+		4. Mobile Device
 --------------------------------------------------------------------*/
 .mobile-device {
   width: 360px;
@@ -130,84 +221,7 @@
 }
 
 /*---------------------------------------------------------------------------
-					Hover for devices - Global
-----------------------------------------------------------------------------*/
-
-.screen .info-hover {
-  position: absolute;
-  right: 10px;
-  top: 27px;
-  text-align: center;
-  font-size: 0.6em;
-  line-height: 0.8em;
-  
-  z-index: 1;
-  opacity: 0;
-  width: 30px;
-  height: 30px;
-  
-  background-color: rgba(251, 251, 251, 0.9);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-}
-
-.screen .info-hover i {
-  font-family: "Inconsolata";
-  font-style: normal;
-  position: relative;
-  top: 8px;
-}
-
-.screen .hover-screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  min-height: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .8);
-  opacity: 0;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-.screen .hover-screen .title {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-family: "Inconsolata";
-  color: #fff;
-}
-
-.screen .hover-screen .text {
-  color: #fff;
-  font-size: 0.9em;
-  line-height: 1.4em;
-  font-family: "Inconsolata";
-  width: 90%;
-  margin: 0 auto;
-}
-
-.screen:active .hover-screen,
-.screen:focus .hover-screen,
-.screen:hover .hover-screen {
-  opacity: 1;
-  z-index: 1;
-}
-
-
-/*---------------------------------------------------------------------------
-					Tablet Device CSS
+		5. Tablet Device CSS
 ----------------------------------------------------------------------------*/
 .tablet-device {
   width: 990px;
@@ -279,7 +293,7 @@
 
   
 /*---------------------------------------------------------------------------
-					Desktop Device
+		6. Desktop Device
 ----------------------------------------------------------------------------*/
 .wrap-desktop {
   width: 1080px;
@@ -387,7 +401,7 @@
 
 
 /*---------------------------------------------------------------------------
-					Browser Tab
+		7. Browser Tab
 ----------------------------------------------------------------------------*/
 .browser-tab {
   width: 1080px;
