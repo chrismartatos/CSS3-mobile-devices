@@ -1,7 +1,17 @@
 /*!
- *  1. Styles
+ *  1. variables and mixins
  */
 @import "elements/variables";
 @import "elements/mixins";
+
+/*!
+ *  2. Styles
+ */
+@import "elements/styles-normalize";
+@import "elements/styles-layout";
 @import "elements/styles-devices";
+
+/*!
+ *  3. Mobile
+ */
 @import "elements/media-queries";

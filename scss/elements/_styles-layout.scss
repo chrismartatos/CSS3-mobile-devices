@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------------
+		Layout
+--------------------------------------------------------------------*/
+body {
+	background-color: #f6f6f7;
+}
+
+h1, h2 {
+	font-family: $INC;
+	font-weight: 700;
+}
+
+
+/*--------------------------------------------------------------------
+		Header
+--------------------------------------------------------------------*/
+#header { 
+	width: 100%; 
+	display: block; 
+	position: fixed; 
+	z-index: 5; 
+	left: 0; 
+	right: auto; 
+	top:0;
+	height: 30px;
+	background-color: rgba(255,255,255,.8); 
+	
+	#logo {
+	display: block;
+	text-align: center;
+	padding: 4px 0 0;
+		
+		img { 
+			display: inline;
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------------
+		Footer
+--------------------------------------------------------------------*/
+#footer {
+	
+	padding: 10px 0;
+	text-align: center;
+	
+	 a {
+		font:400 12px/12px $INC;
+		color: #000;
+		text-decoration: underline;
+	}
+
+}
+
+
+/*--------------------------------------------------------------------
+		Content
+--------------------------------------------------------------------*/
+#content {
+	padding-top: 45px;
+	
+	h1 {
+		text-align: center;
+		margin: 4rem auto;
+		font-size: 1.8em;
+		width: 80%;
+	}
+	
+	h2 {
+		font-size: 1.6em;
+	}
+}
+
+.desc {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.desc p {
+	font-family: $INC;
+	font-size: 1.1em;
+	line-height: 1.8em;
+}
+
+
+/*--------------------------------------------------------------------
+		Devices wrapper - add some styles
+--------------------------------------------------------------------*/
+.wrap-device {
+	padding: 6rem 0;
+	
+	&:nth-child(1n){
+		background-color: #f1f1f1;
+	}
+	
+	&:nth-child(3n){
+		background-color: transparent;
+	}
+
+	&:nth-child(2n){
+		background-color: #ffffff;
+	}
+
+}

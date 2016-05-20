@@ -1,18 +1,19 @@
 /*--------------------------------------------------------------------
-		Shortcodes
+		Shortcodes - For devices
 --------------------------------------------------------------------*/
-.clear:before, 
-.clear:after { 
-	content:"";
-	display:table; 
-}
-
-.clear:after { 
-	clear:both; 
-}
-
+.clear
 .clear { 
 	zoom:1; 
+	
+	&:after { 
+		clear:both; 
+	}
+	
+	&:after,
+	&:before { 
+		content:"";
+		display:table; 
+	}
 }
 
 .vertical-center-outer {
@@ -27,6 +28,10 @@
 }
 
 
+/*---------------------------------------------------------------------------
+			Screen styles for all devices - Hover effect
+----------------------------------------------------------------------------*/
+
 .screen {
 	position: relative;
 	background-repeat: no-repeat;
@@ -35,7 +40,70 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
+	
+	.info-hover {
+		position: absolute;
+		right: 8px;
+		top: 27px;
+		z-index: 1;
+		opacity: 0;
+		width: 30px;
+		height: 30px;
+		background-color: rgba(251,251,251,0.9);
+		
+		@include br(50%);
+		@include transition(200ms);
+		
+		i {
+			font-family: $INC;
+			font-style: normal;
+			position: relative;
+			top: 8px;	
+		}
+	}
+	
+	.hover-screen {
+		position: absolute;
+		top:0;
+		left: 0;
+		z-index: -1;
+		min-height: 100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,.8);
+		opacity: 0;
+		text-align: center;
+		
+		@include transition(400ms);
+		
+		.title {
+			text-align: center;
+			margin-bottom: 1rem;
+			font-family: $INC;
+			color: #fff;
+		}
+		
+		.text {
+			color: #FFF;
+			font-size: 0.9em;
+			font-family: $INC;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+	
+	&:hover .hover-screen,
+	&:active .hover-screen,
+	&:focus .hover-screen{
+		opacity: 1;
+		z-index: 1;
+		
+		.info-hover {
+			opacity: 0;
+		}
+	}
+		
+}//Close .screen
 
 
 /*---------------------------------------------------------------------------
@@ -370,75 +438,3 @@
 
 
 }//Close .browser-tab
-
-
-
-/*---------------------------------------------------------------------------
-					Hover
-----------------------------------------------------------------------------*/
-
-.screen {
-	
-	.info-hover {
-		position: absolute;
-		right: 8px;
-		top: 27px;
-		z-index: 1;
-		opacity: 0;
-		width: 30px;
-		height: 30px;
-		background-color: rgba(251,251,251,0.9);
-		
-		@include br(50%);
-		@include transition(200ms);
-		
-		i {
-			font-family: "Inconsolata";
-			font-style: normal;
-			position: relative;
-			top: 8px;	
-		}
-	}
-	
-	.hover-screen {
-		position: absolute;
-		top:0;
-		left: 0;
-		z-index: -1;
-		min-height: 100%;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0,0,0,.8);
-		opacity: 0;
-		text-align: center;
-		
-		@include transition(400ms);
-		
-		.title {
-			text-align: center;
-			margin-bottom: 1rem;
-			font-family: "Inconsolata";
-			color: #fff;
-		}
-		
-		.text {
-			color: #FFF;
-			font-size: 0.9em;
-			font-family: $INC;
-			width: 90%;
-			margin: 0 auto;
-		}
-	}
-	
-	&:hover .hover-screen,
-	&:active .hover-screen,
-	&:focus .hover-screen{
-		opacity: 1;
-		z-index: 1;
-		
-		.info-hover {
-			opacity: 0;
-		}
-	}
-		
-}//Close .screen
