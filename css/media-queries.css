@@ -1,0 +1,451 @@
+/*------------------------------------------------------------------------------------
+	Media Queries: Big screens
+------------------------------------------------------------------------------------*/ 
+@media only screen and (min-width: 1039px) and (max-width: 1320px) {
+
+  .showcase-project .mobile-device {
+    height: 470px;
+    width: 220px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+  }
+  
+  .showcase-project .mobile-device .speaker {
+    margin: 25px auto;
+    height: 4px;
+  }
+  
+  .showcase-project .mobile-device .screen {
+    width: 200px;
+    height: 350px;
+  }
+  
+  .showcase-project .mobile-device .touch {
+    width: 35px;
+    height: 35px;
+    border-width: 3px;
+  }
+ 
+ 
+ /*	Hover for devices
+	---------------------------------------------------------*/
+  .screen .hover-screen .text p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  
+}/* Close @media */
+
+
+
+/*------------------------------------------------------------------------------------
+	Media Queries: Laptops 
+------------------------------------------------------------------------------------*/  
+@media only screen and (min-width: 1039px) and (max-width: 1140px) {
+	
+  /* Desktop
+	------------------------------------------*/    
+  .wrap-desktop {
+    width: 740px;
+   
+  }
+  
+  .wrap-desktop .desktop-screen {
+    height: 470px;
+    position: relative;
+    width: 740px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+  }
+  
+  .wrap-desktop .desktop-screen .screen {
+    height: 420px;
+    width: 700px;
+    margin: 25px auto;
+  }
+  
+  .wrap-desktop .stand-top {
+    height: 70px;
+    width: 40px;
+  }
+  
+  .wrap-desktop .stand-bottom {
+    width: 160px;
+    height: 6px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls {
+    bottom: 12px;
+  }
+  
+ /*	Tablet
+	---------------------------------------------------------*/
+  .tablet-device {
+    width: 615px;
+    height: 392px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    
+  }
+  
+  .tablet-device .speaker {
+    width: 8px;
+    height: 8px;
+    left: 30px;
+  }
+  
+  .tablet-device .screen {
+    height: 351px;
+    width: 480px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  
+  .tablet-device .touch {
+    border-width: 3px;
+    height: 35px;
+    width: 35px;
+    margin-top: -19px;
+  }
+  
+  /* Browser device
+	------------------------------------------*/
+  .browser-tab {
+    width: 75%;
+    margin: 0 auto;
+  }
+  
+}/* Close @media */
+
+
+
+
+/*------------------------------------------------------------------------------------
+	Media Queries: Tablets 
+------------------------------------------------------------------------------------*/  
+@media only screen and (max-width: 1040px) {
+  
+  /*	Desktop
+	---------------------------------------------------------*/
+  .wrap-desktop {
+    width: 520px;
+  }
+  
+  .wrap-desktop .desktop-screen {
+    height: 320px;
+    position: relative;
+    width: 500px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+  
+  .wrap-desktop .desktop-screen .screen {
+    height: 285px;
+    width: 470px;
+    margin: 17px auto;
+  }
+  
+  .wrap-desktop .stand-top {
+    height: 60px;
+    width: 32px;
+  }
+  
+  .wrap-desktop .stand-bottom {
+    width: 160px;
+    height: 6px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls {
+    bottom: 8px;
+    right: 20px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls .power {
+    height: 2px;
+    width: 10px;
+  }
+  
+  
+  /*	Tablet Device
+	---------------------------------------------------------*/
+  .tablet-device {
+    width: 615px;
+    height: 392px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    
+  }
+  
+  .tablet-device .speaker {
+    width: 8px;
+    height: 8px;
+    left: 30px;
+  }
+  
+  .tablet-device .screen {
+    height: 351px;
+    width: 480px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+  
+  .tablet-device .touch {
+    border-width: 3px;
+    height: 35px;
+    width: 35px;
+    margin-top: -19px;
+  }
+  
+  /*	Mobile Device
+	---------------------------------------------------------*/
+  .mobile-device {
+    height: 470px;
+    width: 220px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+  }
+  
+  .mobile-device .speaker {
+    margin: 25px auto;
+    height: 4px;
+  }
+  
+  .mobile-device .screen {
+    width: 200px;
+    height: 350px;
+  }
+  
+  .mobile-device .touch {
+    width: 35px;
+    height: 35px;
+    border-width: 3px;
+  }
+ 
+  .screen .hover-screen .text p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+  
+  
+  /* Browser
+	---------------------------------------------------------*/
+  .browser-tab {
+    width: 72%;
+    margin: 0 auto;
+  }
+  
+  .browser-tab .tab {
+    height: 25px;
+  }
+  
+  .browser-tab .tab .control {
+    height: 8px;
+    margin: 8px 0 0 9px;
+    width: 8px;
+  }
+
+}/* Close @media */
+
+
+
+
+
+
+/*--------------------------------------------------------------------
+		Media Queries: All Mobile devices 
+--------------------------------------------------------------------*/
+@media only screen and (max-width: 767px)
+{
+   #header { position: relative; height: 45px; }
+   #logo { padding: 0; } 
+
+  /*  Desktop
+  ---------------------------------------------------------*/
+  .wrap-desktop {
+    width: 440px;
+  }
+ 
+  .wrap-desktop .desktop-screen {
+    height: 277px;
+    position: relative;
+    width: 100%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+  
+  .wrap-desktop .desktop-screen .screen {
+    height: 256px;
+    width: 420px;
+    margin: 10px auto;
+  }
+  
+  .wrap-desktop .stand-top {
+    height: 38px;
+    width: 28px;
+  }
+  
+  .wrap-desktop .stand-bottom {
+    width: 88px;
+    height: 3px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls {
+    bottom: 5px;
+    right: 16px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls .power {
+    height: 2px;
+    width: 8px;
+  }
+  
+   /*	Tablet
+	---------------------------------------------------------*/
+  .tablet-device {
+    width: 440px;
+    height: 283px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+    
+  }
+  
+  .tablet-device .speaker {
+    width: 6px;
+    height: 6px;
+    left: 14px;
+  }
+  
+  .tablet-device .screen {
+    height: 263px;
+    width: 360px;
+    margin-left: 33px;
+    margin-top: 10px;
+  }
+  
+  .tablet-device .touch {
+    border-width: 2px;
+    height: 25px;
+    width: 25px;
+    margin-top: -13px;
+    right: 10px;
+  }
+  
+  /*	Mobile Hover icon
+	---------------------------------------------------------*/
+  .screen .info-hover {
+    opacity: 1;
+  }
+  
+  
+    /*	Browser Grid
+	---------------------------------------------------------*/
+  .browser-tab {
+    width: 88%;
+  }
+  
+  .browser-tab .tab {
+    height: 20px;
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .browser-tab .tab .control {
+    height: 6px;
+    margin: 6px 0 0 6px;
+    width: 6px;
+  }
+
+
+
+}/* Close @media */
+
+
+
+/*------------------------------------------------------------------------------------
+	Media Queries: Mobile Portrait 
+------------------------------------------------------------------------------------*/  
+@media only screen and (max-width: 479px) {
+	
+  .wrap-desktop {
+    width: 300px;
+  }
+  
+  .wrap-desktop .desktop-screen {
+    height: 190px;
+    position: relative;
+    width: 300px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  }
+  
+  .wrap-desktop .desktop-screen .screen {
+    height: 169px;
+    width: 276px;
+    margin: 10px auto;
+  }
+  
+  .wrap-desktop .stand-top {
+    height: 35px;
+    width: 25px;
+  }
+  
+  .wrap-desktop .stand-bottom {
+    width: 85px;
+    height: 3px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls {
+    bottom: 5px;
+    right: 16px;
+  }
+  
+  .wrap-desktop .desktop-screen .controls .power {
+    height: 2px;
+    width: 8px;
+  }
+  
+  
+    /*	Tablet
+	---------------------------------------------------------*/
+  .tablet-device {
+    width: 316px;
+    height: 205px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+  }
+  
+  .tablet-device .speaker {
+    width: 4px;
+    height: 4px;
+    left: 8px;
+  }
+  
+  .tablet-device .screen {
+    height: 192px;
+    width: 260px;
+    margin-left: 22px;
+    margin-top: 7px;
+  }
+  
+  .tablet-device .touch {
+    border-width: 2px;
+    height: 16px;
+    width: 16px;
+    margin-top: -8px;
+    right: 7px;
+  }
+	
+	
+	
+}/* Close @media */
