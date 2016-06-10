@@ -5,7 +5,7 @@ Responsive CSS devices to present your work. STOP using PSD Mock ups and PSD Tem
 
 Tutorial/Case-Study: http://www.chrismartatos.com/2016/05/responsive-css3-devices-portfolio-presentation/
 
-Credits:
+Credits
 ========
 
-• CSS3
+- CSS3
